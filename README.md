@@ -8,9 +8,9 @@ This repo is a workspace for Causal Inference work relating to data from the She
 
 [Urban Flows Data Extraction Tool](https://sheffield-portal.urbanflows.ac.uk/uflobin/sufoDXT)
 
-[Data Extraction Tool PDF Guide](https://github.com/CITCOM-project/UrbanFlows/blob/main/ufDXT_Guide.pdf)
+[Data Extraction Tool PDF Guide](https://github.com/CITCOM-project/UrbanFlows/blob/main/ufDXT_Guide.pdf) (Download PDF for hyperlinks to work)
 
-## Loading Single Urban Flows CSV Example
+## Loading Single Urban Flows CSV
 
 1. Import the `LoadCsvUf` class from `uf_csv_loader.py`
 2. Initialise class with path to the csv
