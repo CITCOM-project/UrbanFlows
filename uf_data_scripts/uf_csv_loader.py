@@ -12,6 +12,7 @@ class LoadCsvUf:
     def __init__(self, file_path: str):
         self.path = Path(file_path)
         self.columns = list()
+        self.num_tables = None
 
     def to_dataframe(self):
         self._get_metadata()
@@ -33,11 +34,13 @@ class LoadCsvUf:
         with open(self.path, "r") as csv_file:
             csv_reader = csv.reader(csv_file, delimiter=',')
             line_count = 0
-            pattern = r"Colu_\d(.*)(?=\{)"
+            column_pattern = r"Colu_\d(.*)(?=\{)"
             for row in csv_reader:
                 if row:
+                    if "Number" in row[0]:
+                        self.num_tables = int(row[0].split()[-1])  # The number is last 'word' in the string
                     if "Colu" in row[0]:
-                        result = re.search(pattern, row[0])
+                        result = re.search(column_pattern, row[0])
                         if result:
                             self.columns.append(result.group(1).strip())
                     if "nEntries" in row[0]:
