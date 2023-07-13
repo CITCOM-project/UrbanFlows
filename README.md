@@ -8,4 +8,4 @@ This repo is a workspace for Causal Inference work relating to data from the She
 
 [Urban Flows Data Extraction Tool](https://sheffield-portal.urbanflows.ac.uk/uflobin/sufoDXT)
 
-[Data Extraction Tool PDF Guide]()
+[Data Extraction Tool PDF Guide](https://github.com/CITCOM-project/UrbanFlows/blob/main/ufDXT_Guide.pdf)
