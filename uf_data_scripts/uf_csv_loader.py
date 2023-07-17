@@ -73,5 +73,6 @@ class LoadCsvUf:
 
 
 if __name__ == "__main__":
-    uf = LoadCsvUf('SufoExtract_20230713_to_20230713.csv')
+    uf = LoadCsvUf(Path('example_data/SufoExtract_20230713_to_20230713.csv'))
     df = uf.to_dataframe()
+    print(df.head())
