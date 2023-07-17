@@ -1,4 +1,4 @@
-# Urban Flows / CITCOM Workspace
+# Urban Flows (UF) / CITCOM Workspace
 
 This repo is a workspace for Causal Inference work relating to data from the Sheffield [Urban Flows Observatory](https://urbanflows.ac.uk/)
 
@@ -15,3 +15,6 @@ This repo is a workspace for Causal Inference work relating to data from the She
 1. Import the `LoadCsvUf` class from `uf_csv_loader.py`
 2. Initialise class with path to the csv
 3. Choose method relating to how you want to transform csv.
+
+To see running example run
+`python uf_data_scripts/uf_csv_loader.py` from the project root directory
